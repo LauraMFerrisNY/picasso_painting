@@ -5,24 +5,58 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+main > div {
+    display: flex;
+}
+
+.window {
+    background-color: #78bfe6;
+    width: 3rem;
+    height: 5rem;
+    border: .5px solid grey;
+    margin: .3rem
+}
+
 #canvas {
     background-color: #acd7ee;
-    display: flex;
     width: 50rem;
     height: 30rem;
     border: 1px grey solid;
+    flex-direction: column-reverse;
+    margin: 0px;
+    padding: 0px;
+}
+#ground {
+    width: 50rem;
+    height: 1rem;
+    display: inline-flex;
+}
+#above_ground {
+    width: 50rem;
+    height: 29rem;
+    align-self: flex-start;
+    display: flex;
 }
 #pavement {
     background-color: #393939;
-    display: flex;
-    width: 30rem;
+    width: 60%;
     height: 1rem;
-    align-self: flex-end;
 }
 #grass {
     background-color: #085c13;
-    display: flex;
-    width: 20rem;
+    width: 40%;
     height: 1rem;
+}
+#building1 {
+    background-color: #979797;
+    width: 12rem;
+    height: 18rem;
     align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+    margin-right: 1em;
 }
