@@ -12,3 +12,17 @@ main {
     height: 30rem;
     border: 1px grey solid;
 }
+#pavement {
+    background-color: #393939;
+    display: flex;
+    width: 30rem;
+    height: 1rem;
+    align-self: flex-end;
+}
+#grass {
+    background-color: #085c13;
+    display: flex;
+    width: 20rem;
+    height: 1rem;
+    align-self: flex-end;
+}
