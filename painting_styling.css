@@ -1,0 +1,14 @@
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#canvas {
+    background-color: #acd7ee;
+    display: flex;
+    width: 50rem;
+    height: 30rem;
+    border: 1px grey solid;
+}
