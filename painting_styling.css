@@ -10,6 +10,14 @@ main > div {
     display: flex;
 }
 
+.window {
+    background-color: #78bfe6;
+    width: 3rem;
+    height: 5rem;
+    border: .5px solid grey;
+    margin: .3rem
+}
+
 #canvas {
     background-color: #acd7ee;
     width: 50rem;
@@ -45,4 +53,10 @@ main > div {
     width: 12rem;
     height: 18rem;
     align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+    margin-right: 1em;
 }
