@@ -1,3 +1,7 @@
+body {
+    background-color: #fffae4;
+}
+
 main {
     width: 100vw;
     height: 100vh;
@@ -5,6 +9,8 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0px;
+    margin: 0px;
 }
 
 main > div {
@@ -122,6 +128,22 @@ main > div {
     align-self: center;
 }
 
-#form {
+#phone_booth {
+    background-color: red;
+    width: 1.8rem;
+    height: 3rem;
+    align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: .5em;
+    margin-right: 1em;
+}
 
+#phone_booth > .window {
+    background-color: whitesmoke;
+    width: .4rem;
+    height: .5rem;
+    margin: .05rem;
 }
