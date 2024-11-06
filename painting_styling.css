@@ -10,14 +10,6 @@ main > div {
     display: flex;
 }
 
-.window {
-    background-color: #78bfe6;
-    width: 3rem;
-    height: 5rem;
-    border: .5px solid grey;
-    margin: .3rem
-}
-
 #canvas {
     background-color: #acd7ee;
     width: 50rem;
@@ -40,12 +32,12 @@ main > div {
 }
 #pavement {
     background-color: #393939;
-    width: 60%;
+    width: 65%;
     height: 1rem;
 }
 #grass {
     background-color: #085c13;
-    width: 40%;
+    width: 35%;
     height: 1rem;
 }
 #building1 {
@@ -59,4 +51,72 @@ main > div {
     align-items: center;
     margin-left: 1em;
     margin-right: 1em;
+}
+
+#building1 > .window {
+    background-color: #78bfe6;
+    width: 3rem;
+    height: 5rem;
+    border: .5px solid grey;
+    margin: .3rem;
+}
+
+#building2 {
+    align-items: flex-end;
+    display: flex;
+    width: 9rem;
+    height: 45rem;
+    align-self: flex-end;
+    flex-direction: column-reverse;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+
+#building2_base {
+    background-color: #543e01;
+    width: 9rem;
+    height: 20rem;
+    align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#building2_base > .building_detail {
+    background-color: #535353;
+    width: .2rem;
+    height: 20rem;
+    border-right: .08rem solid black;
+}
+
+#building_topper {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#piece1 {
+    border-bottom: 2rem solid #535353;
+	border-left: 1.5rem solid transparent;
+	border-right: 1.5rem solid transparent;
+	height: 0;
+	width: 6rem;
+}
+
+#piece2 {
+    width: 3rem;
+    height: 1.5rem;
+    background-color: black;
+    display: flex;
+    align-self: center;
+}
+
+#piece3 {
+    width: 0;
+	height: 0;
+	border-left: .6rem solid transparent;
+	border-right: .6rem solid transparent;
+	border-bottom: 4rem solid #535353;
+    align-self: center;
 }
