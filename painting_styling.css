@@ -4,6 +4,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 main > div {
@@ -16,7 +17,7 @@ main > div {
     height: 30rem;
     border: 1px grey solid;
     flex-direction: column-reverse;
-    margin: 0px;
+    margin-bottom: 0px;
     padding: 0px;
 }
 #ground {
@@ -100,7 +101,7 @@ main > div {
     border-bottom: 2rem solid #535353;
 	border-left: 1.5rem solid transparent;
 	border-right: 1.5rem solid transparent;
-	height: 0;
+	height: 0px;
 	width: 6rem;
 }
 
@@ -113,10 +114,14 @@ main > div {
 }
 
 #piece3 {
-    width: 0;
-	height: 0;
+    width: 0px;
+	height: 0px;
 	border-left: .6rem solid transparent;
 	border-right: .6rem solid transparent;
 	border-bottom: 4rem solid #535353;
     align-self: center;
+}
+
+#form {
+
 }
