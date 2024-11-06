@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -13,44 +13,86 @@ main {
     margin: 0px;
 }
 
+@media screen and (max-width: 992px) {
+    main {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    #instructions {
+        font-size: 16px;
+        text-align: center;
+    }
+    #form {
+        font-size: 16px;
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .form_element {
+        padding: .5em;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    main {
+        font-size: 6px;
+    }
+    h1 {
+        font-size: 16px;
+    }
+    #instructions {
+        font-size: 16px;
+        text-align: center;
+    }
+    #form {
+        font-size: 16px;
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .form_element {
+        padding: .5em;
+    }
+  }
+
 main > div {
     display: flex;
 }
-
 #canvas {
     background-color: #acd7ee;
-    width: 50rem;
-    height: 30rem;
+    width: 50em;
+    height: 30em;
     border: 1px grey solid;
     flex-direction: column-reverse;
     margin-bottom: 0px;
     padding: 0px;
 }
 #ground {
-    width: 50rem;
-    height: 1rem;
+    width: 50em;
+    height: 1em;
     display: inline-flex;
 }
 #above_ground {
-    width: 50rem;
-    height: 29rem;
+    width: 50em;
+    height: 29em;
     align-self: flex-start;
     display: flex;
 }
 #pavement {
     background-color: #393939;
     width: 65%;
-    height: 1rem;
+    height: 1em;
 }
 #grass {
     background-color: #085c13;
     width: 35%;
-    height: 1rem;
+    height: 1em;
 }
 #building1 {
     background-color: #979797;
-    width: 12rem;
-    height: 18rem;
+    width: 12em;
+    height: 18em;
     align-self: flex-end;
     display: flex;
     flex-wrap: wrap;
@@ -62,28 +104,28 @@ main > div {
 
 #building1 > .window {
     background-color: #78bfe6;
-    width: 3rem;
-    height: 5rem;
+    width: 3em;
+    height: 5em;
     border: .5px solid grey;
-    margin: .3rem;
+    margin: .3em;
 }
 
 #building2 {
     align-items: flex-end;
     display: flex;
-    width: 9rem;
-    height: 45rem;
+    width: 9em;
+    height: 45em;
     align-self: flex-end;
     flex-direction: column-reverse;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 1em;
+    margin-right: 1em;
     
 }
 
 #building2_base {
     background-color: #543e01;
-    width: 9rem;
-    height: 20rem;
+    width: 9em;
+    height: 20em;
     align-self: flex-end;
     display: flex;
     flex-wrap: wrap;
@@ -93,9 +135,9 @@ main > div {
 
 #building2_base > .building_detail {
     background-color: #535353;
-    width: .2rem;
-    height: 20rem;
-    border-right: .08rem solid black;
+    width: .2em;
+    height: 20em;
+    border-right: .08em solid black;
 }
 
 #building_topper {
@@ -104,16 +146,16 @@ main > div {
 }
 
 #piece1 {
-    border-bottom: 2rem solid #535353;
-	border-left: 1.5rem solid transparent;
-	border-right: 1.5rem solid transparent;
+    border-bottom: 2em solid #535353;
+	border-left: 1.5em solid transparent;
+	border-right: 1.5em solid transparent;
 	height: 0px;
-	width: 6rem;
+	width: 6em;
 }
 
 #piece2 {
-    width: 3rem;
-    height: 1.5rem;
+    width: 3em;
+    height: 1.5em;
     background-color: black;
     display: flex;
     align-self: center;
@@ -122,30 +164,30 @@ main > div {
 #piece3 {
     width: 0px;
 	height: 0px;
-	border-left: .6rem solid transparent;
-	border-right: .6rem solid transparent;
-	border-bottom: 4rem solid #535353;
+	border-left: .6em solid transparent;
+	border-right: .6em solid transparent;
+	border-bottom: 4em solid #535353;
     align-self: center;
 }
 
 #phone_booth {
     background-color: red;
-    width: 1.8rem;
-    height: 3rem;
+    width: 1.8em;
+    height: 3em;
     align-self: flex-end;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-left: 1rem;
-    margin-right: 4.8rem;
+    margin-left: 1em;
+    margin-right: 4.8em;
 }
 
 #phone_booth > .window {
     background-color: whitesmoke;
-    width: .4rem;
-    height: .5rem;
-    margin: .05rem;
+    width: .4em;
+    height: .5em;
+    margin: .05em;
 }
 
 #beyond_buildings {
@@ -154,14 +196,14 @@ main > div {
 }
 #sky {
     display: flex;
-    width: 17.5rem;
-    height: 16rem;
+    width: 17.5em;
+    height: 16em;
     justify-content: center;
 }
 #sun_layer1 {
     position: absolute;
-    height: 4rem;
-    width: 4rem;
+    height: 4em;
+    width: 4em;
     background-color: #e7c451;
     border-radius: 50%;
     align-self: center;
@@ -169,7 +211,7 @@ main > div {
 }
 #sun_layer2 {
     position: absolute;
-    height: 9rem;
+    height: 9em;
     width: 9em;
     border-radius: 50%;
     align-self: center;
@@ -178,8 +220,8 @@ main > div {
 }
 #park {
     display: flex;
-    width: 17.5rem;
-    height: 13rem;
+    width: 17.5em;
+    height: 13em;
     justify-content: space-around;
     align-items: flex-end;
 }
@@ -188,26 +230,37 @@ main > div {
     flex-direction: column;
 }
 .trunk {
-    width: .6rem;
-    height: 1.5rem;
+    width: .6em;
+    height: 1.5em;
     background-color: #543e01;
     display: flex;
     align-self: center;
 }
 
 .bottom_branches {
-    border-bottom: 2rem solid #085c13;
-	border-left: .7rem solid transparent;
-	border-right: .7rem solid transparent;
+    border-bottom: 2em solid #085c13;
+	border-left: .7em solid transparent;
+	border-right: .7em solid transparent;
 	height: 0px;
-	width: .5rem;
+	width: .5em;
 }
 
 .top_branches {
     width: 0px;
 	height: 0px;
-	border-left: .6rem solid transparent;
-	border-right: .6rem solid transparent;
-	border-bottom: 1.7rem solid #085c13;
+	border-left: .6em solid transparent;
+	border-right: .6em solid transparent;
+	border-bottom: 1.7em solid #085c13;
     align-self: center;
+}
+#instructions {
+    text-align: center;
+}
+#form {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+}
+.form_element {
+    padding: .5em;
 }
