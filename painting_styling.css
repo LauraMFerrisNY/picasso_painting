@@ -1,7 +1,6 @@
 body {
     background-color: #fffae4;
 }
-
 main {
     width: 100vw;
     height: 100vh;
@@ -12,11 +11,9 @@ main {
     padding: 0px;
     margin: 0px;
 }
-
 main > div {
     display: flex;
 }
-
 #canvas {
     background-color: #acd7ee;
     width: 50rem;
@@ -59,7 +56,6 @@ main > div {
     margin-left: 1em;
     margin-right: 1em;
 }
-
 #building1 > .window {
     background-color: #78bfe6;
     width: 3rem;
@@ -67,7 +63,6 @@ main > div {
     border: .5px solid grey;
     margin: .3rem;
 }
-
 #building2 {
     align-items: flex-end;
     display: flex;
@@ -79,7 +74,6 @@ main > div {
     margin-right: 1rem;
     
 }
-
 #building2_base {
     background-color: #543e01;
     width: 9rem;
@@ -90,19 +84,16 @@ main > div {
     justify-content: space-evenly;
     align-items: center;
 }
-
 #building2_base > .building_detail {
     background-color: #535353;
     width: .2rem;
     height: 20rem;
     border-right: .08rem solid black;
 }
-
 #building_topper {
     display: flex;
     flex-direction: column-reverse;
 }
-
 #piece1 {
     border-bottom: 2rem solid #535353;
 	border-left: 1.5rem solid transparent;
@@ -110,7 +101,6 @@ main > div {
 	height: 0px;
 	width: 6rem;
 }
-
 #piece2 {
     width: 3rem;
     height: 1.5rem;
@@ -118,7 +108,6 @@ main > div {
     display: flex;
     align-self: center;
 }
-
 #piece3 {
     width: 0px;
 	height: 0px;
@@ -127,7 +116,6 @@ main > div {
 	border-bottom: 4rem solid #535353;
     align-self: center;
 }
-
 #phone_booth {
     background-color: red;
     width: 1.8rem;
@@ -138,12 +126,27 @@ main > div {
     justify-content: center;
     align-items: center;
     margin-left: .5em;
-    margin-right: 1em;
+    margin-right: 5.3em;
 }
-
 #phone_booth > .window {
     background-color: whitesmoke;
     width: .4rem;
     height: .5rem;
     margin: .05rem;
+}
+#beyond_buildings {
+    display: flex;
+    flex-direction: column-reverse;
+}
+#sky {
+    display: flex;
+    width: 17.5rem;
+    height: 16rem;
+}
+
+
+#park {
+    display: flex;
+    width: 17.5rem;
+    height: 13rem;
 }
