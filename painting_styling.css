@@ -137,8 +137,8 @@ main > div {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-left: .5em;
-    margin-right: 1em;
+    margin-left: 1rem;
+    margin-right: 4.8rem;
 }
 
 #phone_booth > .window {
@@ -146,4 +146,68 @@ main > div {
     width: .4rem;
     height: .5rem;
     margin: .05rem;
+}
+
+#beyond_buildings {
+    display: flex;
+    flex-direction: column-reverse;
+}
+#sky {
+    display: flex;
+    width: 17.5rem;
+    height: 16rem;
+    justify-content: center;
+}
+#sun_layer1 {
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    background-color: #e7c451;
+    border-radius: 50%;
+    align-self: center;
+    z-index: 2;
+}
+#sun_layer2 {
+    position: absolute;
+    height: 9rem;
+    width: 9em;
+    border-radius: 50%;
+    align-self: center;
+    z-index: 1;
+    background: radial-gradient(#e9e172, #acd7ee);
+}
+#park {
+    display: flex;
+    width: 17.5rem;
+    height: 13rem;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.tree {
+    display: flex;
+    flex-direction: column;
+}
+.trunk {
+    width: .6rem;
+    height: 1.5rem;
+    background-color: #543e01;
+    display: flex;
+    align-self: center;
+}
+
+.bottom_branches {
+    border-bottom: 2rem solid #085c13;
+	border-left: .7rem solid transparent;
+	border-right: .7rem solid transparent;
+	height: 0px;
+	width: .5rem;
+}
+
+.top_branches {
+    width: 0px;
+	height: 0px;
+	border-left: .6rem solid transparent;
+	border-right: .6rem solid transparent;
+	border-bottom: 1.7rem solid #085c13;
+    align-self: center;
 }
